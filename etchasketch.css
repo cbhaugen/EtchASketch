@@ -1,0 +1,29 @@
+
+:root {
+  --grid-height: 70px;
+  --grid-width: 70px;
+  --grid-color: black;
+}
+
+body {
+  background-color: black;
+}
+
+
+div#divContainer {
+  height: 700px;
+  max-width: 700px;
+  background-color: gray;
+  margin: 0 auto;
+  position: relative;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.square {
+  background-color: var(--grid-color);
+  height: var(--grid-height);
+  width: var(--grid-width);
+}
