@@ -1,18 +1,38 @@
 
 :root {
-  --grid-height: 70px;
-  --grid-width: 70px;
-  --grid-color: black;
+  --grid-height: 60px;
+  --grid-width: 60px;
 }
 
 body {
+  background-color: DimGrey;
+}
+
+div#buttonContainer {
+  height: 100px;
+  width: 600px;
+  background-color: gray;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 70px;
+  width: 225px;
+  padding: 0;
   background-color: black;
+  font-size: 30px;
+  color: white;
+  display: inline-block;
+  justify-content: center;
+  margin: auto;
 }
 
 
 div#divContainer {
-  height: 700px;
-  max-width: 700px;
+  max-height: 600px;
+  max-width: 600px;
   background-color: gray;
   margin: 0 auto;
   position: relative;
@@ -23,7 +43,9 @@ div#divContainer {
 
 
 .square {
-  background-color: var(--grid-color);
+  background-color: black;
   height: var(--grid-height);
   width: var(--grid-width);
+  box-sizing: border-box;
+  border: 1px solid grey;
 }
